@@ -28,5 +28,5 @@ if (!options.verbose) {
     console.log(chalk.yellow(preamble))
 }
 
-const timeTo = calculateTimeFromNowTo(options.to, LOCALE)
+const timeTo = calculateTimeFromNowTo(options.to)
 console.log(chalk.green(timeTo))

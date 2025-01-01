@@ -2,8 +2,6 @@ const createUTCDate = (year, month, day, hour = 0, minute = 0, second = 0, milli
     return new Date(Date.UTC(year, month, day, hour, minute, second, millisecond));
 }
 
-
-
 const formatDateAndTime = (dateString: string, locale: string): string => {
     const then = new Date(dateString)
     const formatter = new Intl.DateTimeFormat("en-US", {
@@ -19,7 +17,7 @@ const formatDateAndTime = (dateString: string, locale: string): string => {
     return formatter.format(then);
 }
 
-const calculateTimeFromNowTo = (dateString: string, locale: string): string => {
+const calculateTimeFromNowTo = (dateString: string): string => {
     const now = new Date()
     const utcNow = createUTCDate(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds(), now.getMilliseconds())
     const then = new Date(dateString)
@@ -32,4 +30,4 @@ const calculateTimeFromNowTo = (dateString: string, locale: string): string => {
     return `${days}d ${hours}h ${minutes}m ${seconds}s`
 }
 
-export { calculateTimeFromNowTo, formatDateAndTime }
+export { createUTCDate, calculateTimeFromNowTo, formatDateAndTime }
