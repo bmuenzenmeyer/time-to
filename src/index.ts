@@ -23,7 +23,7 @@ const options = yargs(hideBin(process.argv))
 
 console.log(chalk.bgBlue(`time-to ${options.to} in ${LOCALE}`))
 
-if (!options.verbose) {
+if (options.verbose) {
     const preamble = formatDateAndTime(options.to, LOCALE)
     console.log(chalk.yellow(preamble))
 }
