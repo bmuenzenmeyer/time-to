@@ -1,3 +1,6 @@
 import 'dotenv/config'
 
-console.log(process.env.LOCALE)
+const {LOCALE} = process.env
+
+console.log('time-to!!!')
+console.log({LOCALE})
