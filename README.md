@@ -27,7 +27,9 @@ pnpm install
 
 ## Comparison
 
-| Metric | Before | After |
-| - | - | - |
-| # node_modules | 210 | 5 |
-| size node_modules | 193 MB | 58 MB |
+> npm-built node_modules, omitting biome dependencies
+
+| Metric | Before | After | Delta |
+| - | - | - | - | 
+| # node_modules | 215 | 2 | 0.9%, or 107 times smaller | 
+| size node_modules | 49 MB | 2.6 MB |5.3%, or 18 times smaller | 

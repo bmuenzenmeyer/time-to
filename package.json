@@ -5,9 +5,9 @@
 	"description": "A contrived CLI and server to support a blog post about recent Node.js features",
 	"main": "src/index.js",
 	"scripts": {
-		"dev:node": "node --experimental-strip-types --env-file=.env --watch-path src src/server.ts --to 2025-04-20",
-		"test:node": "node --test",
-		"test:node:watch": "node --test --watch",
+		"dev": "node --experimental-strip-types --env-file=.env --watch-path src src/server.ts --to 2025-04-20",
+		"test": "node --test",
+		"test:watch": "node --test --watch",
 		"lint": "biome check",
 		"lint:fix": "pnpm lint --fix"
 	},
