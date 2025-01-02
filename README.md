@@ -14,7 +14,19 @@ A contrived CLI and server to support a blog post about recent Node.js features.
 
 ## Usage
 
-time-to --to 2026-01-01T00:00:00.000Z
+> [!INFO]
+> Create an `.env` with a `PORT` key and number.
+
+Run with the default date of New Year's 2026
+```
+pnpm time-to
+```
+
+Run with a custom date, like [next inauguration day](https://www.usa.gov/inauguration):
+
+```
+pnpm time-to --to 2029-01-20
+```
 
 ## Install
 
