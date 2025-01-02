@@ -1,6 +1,5 @@
 import { createServer } from 'node:http'
 import { parseArgs, styleText } from 'node:util'
-import chalk from 'chalk'
 
 import { calculateTimeFromNowTo } from './lib/calculate.js'
 
