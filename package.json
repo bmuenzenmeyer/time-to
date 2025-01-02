@@ -1,29 +1,32 @@
 {
-  "name": "time-to",
-  "type": "module",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.ts",
-  "scripts": {
-    "dev": "nodemon --watch ./src --ext ts --exec pnpm test:smoke",
-    "build": "tsc",
-    "test": "jest",
-    "test:smoke": "pnpm build && node dist/index.js --to 2026-01-01T00:00:00.000Z"
-  },
-  "keywords": [],
-  "author": "BrianMuenzenmeyer",
-  "packageManager": "pnpm@10.0.0-rc.2+sha512.b6e59b96f90ca92449ac2f6dca9b430880448fc97d21f0fa9200e3d5ddb5289ad535255400554f7f3486e2d60058492161aaa9b58828e81f50c096718be9d156",
-  "dependencies": {
-    "chalk": "^5.4.1",
-    "dotenv": "^16.4.7",
-    "yargs": "^17.7.2"
-  },
-  "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "@types/yargs": "^17.0.33",
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.9",
-    "ts-jest": "^29.2.5",
-    "typescript": "^5.7.2"
-  }
+	"name": "time-to",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "A contrived CLI and server to support a blog post about recent Node.js features",
+	"main": "src/index.js",
+	"scripts": {
+		"dev:nodemon": "nodemon src src/server.js --to 2025-04-20",
+		"dev:node": "node --env-file=.env --watch-path src src/server.js --to 2025-04-20",
+		"test:jest": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+		"test:jest:watch": "pnpm test:jest --watch",
+		"test:node": "node --test",
+		"test:node:watch": "node --test --watch",
+		"lint": "biome check",
+		"lint:fix": "pnpm lint --fix"
+	},
+	"keywords": [],
+	"author": "BrianMuenzenmeyer",
+	"packageManager": "pnpm@10.0.0-rc.2+sha512.b6e59b96f90ca92449ac2f6dca9b430880448fc97d21f0fa9200e3d5ddb5289ad535255400554f7f3486e2d60058492161aaa9b58828e81f50c096718be9d156",
+	"dependencies": {
+		"chalk": "^5.4.1",
+		"dotenv": "^16.4.7",
+		"yargs": "^17.7.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/jest": "^29.5.14",
+		"@types/yargs": "^17.0.33",
+		"jest": "^29.7.0",
+		"nodemon": "^3.1.9"
+	}
 }
