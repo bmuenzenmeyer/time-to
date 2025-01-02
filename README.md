@@ -1,6 +1,15 @@
 # time-to
 
-A contrived CLI to support a blog post about recent Node.js features.
+A contrived CLI and server to support a blog post about recent Node.js features.
+
+[Read the blog post](https://brianmuenzenmeyer.com/posts/2024-do-i-need-this-node-dependency/).
+
+- [x] testing source code
+- [x] watching source code
+- [x] parsing arguments
+- [x] reading environment
+- [x] styling output
+- [ ] running typescript
 
 ## Usage
 
