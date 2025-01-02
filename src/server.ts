@@ -3,7 +3,7 @@ import { parseArgs, styleText } from 'node:util'
 
 import { calculateTimeFromNowTo } from './lib/calculate.js'
 
-const { PORT } = process.env
+const PORT = Number(process.env.PORT)
 
 const { values } = parseArgs({
 	options: {
