@@ -9,7 +9,8 @@ A contrived CLI and server to support a blog post about recent Node.js features.
 - [x] parsing arguments
 - [x] reading environment
 - [x] styling output
-- [ ] running typescript
+- [x] running typescript
+- [ ] testing typescript (done, but tired)
 
 ## Usage
 
@@ -28,5 +29,5 @@ pnpm install
 
 | Metric | Before | After |
 | - | - | - |
-| # node_modules | 209 | |
-| size node_modules | 128 MB | |
+| # node_modules | 210 | |
+| size node_modules | 193 MB | |
