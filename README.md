@@ -29,5 +29,5 @@ pnpm install
 
 | Metric | Before | After |
 | - | - | - |
-| # node_modules | 210 | |
-| size node_modules | 193 MB | |
+| # node_modules | 210 | 5 |
+| size node_modules | 193 MB | 58 MB |
