@@ -14,7 +14,7 @@ A contrived CLI and server to support a blog post about recent Node.js features.
 
 ## Usage
 
-> [!INFO]
+> [!NOTE]
 > Create an `.env` with a `PORT` key and number.
 
 Run with the default date of New Year's 2026
