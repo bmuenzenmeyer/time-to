@@ -5,10 +5,10 @@
 	"description": "A contrived CLI and server to support a blog post about recent Node.js features",
 	"main": "src/index.js",
 	"scripts": {
-		"dev:nodemon": "nodemon --watch src --exec node src/server.js",
-		"dev:node": "node --watch-path src src/server.js --to 2025-04-20",
+		"dev:nodemon": "nodemon src src/server.js --to 2025-04-20",
+		"dev:node": "node --env-file=.env --watch-path src src/server.js --to 2025-04-20",
 		"test:jest": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-		"test:jest:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+		"test:jest:watch": "pnpm test:jest --watch",
 		"test:node": "node --test",
 		"test:node:watch": "node --test --watch",
 		"lint": "biome check",
