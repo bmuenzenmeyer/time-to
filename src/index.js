@@ -5,6 +5,7 @@ import { parseArgs } from 'node:util'
 import { calculateTimeFromNowTo } from './lib/calculate.js'
 
 const { values } = parseArgs({
+	strict: true,
 	options: {
 		to: {
 			type: 'string',
