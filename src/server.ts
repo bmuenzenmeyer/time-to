@@ -5,7 +5,6 @@ import { calculateTimeFromNowTo } from './lib/calculate.js'
 
 const PORT = Number(process.env.PORT)
 
-
 const server = createServer((req, res) => {
 	res.writeHead(200, { 'Content-Type': 'text/plain' })
 	res.end(calculateTimeFromNowTo('2025-12-31'))
