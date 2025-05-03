@@ -7,7 +7,7 @@ const PORT = Number(process.env.PORT)
 
 const server = createServer((req, res) => {
 	res.writeHead(200, { 'Content-Type': 'text/plain' })
-	res.end(calculateTimeFromNowTo('2025-12-31'))
+	res.end(calculateTimeFromNowTo('2028-11-07'))
 })
 
 server.listen(PORT, '127.0.0.1', () => {
